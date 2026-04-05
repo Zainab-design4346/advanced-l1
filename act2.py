@@ -1,0 +1,15 @@
+file=open("sports.txt", "r")
+print("Reading Mode-")
+print(file.read())
+file.close()
+
+file2 = open('sports.txt', 'w')
+file2.write("File in write mode...")
+file2.write("I like to play football and badminton. ")
+file2.close()
+
+file3 = open('sports.txt', 'a')
+file3.write("\n File in append mode...")
+file3.write("Badminton is a fast-paced racket sport played individually (singles) or in pairs (doubles) by hitting a shuttlecock over a net, requiring agility, speed, and precision.")
+file3.write("\nFootball is the world's most popular sport, played by two teams of 11 players with the objective of scoring goals using any part of the body except the hands and arms.")
+file3.close()
